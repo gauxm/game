@@ -1,0 +1,96 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: limegreen;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #FF4500;
+}
+
+/* New Game Section */
+#new-game, #game-section, #leader-board {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button:hover {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+/* Leaderboard Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Fixe la largeur des colonnes */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Couleurs pour le Leader Board */
+.rank-1 {
+    background-color: #6B8E23; /* Vert plus foncé */
+    color: white;
+}
+
+.rank-2 {
+    background-color: #FFA500; /* Orange vif */
+    color: white;
+}
+
+.rank-3 {
+    background-color: #FFD700; /* Jaune tournesol */
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    /* Ajuste la taille du tableau */
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        display: table-cell; /* Assure que les cellules restent sur une même ligne */
+        width: auto; /* S'adapte à la taille disponible */
+        padding: 10px;
+        font-size: 14px; /* Réduit légèrement la taille du texte sur mobile */
+        text-align: center; /* Centrer le texte */
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    /* Optionnel : réduire la taille des bordures sur mobile */
+    td {
+        border-bottom: 1px solid #ccc;
+    }
+}
